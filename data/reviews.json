@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "image": "01",
+      "_id": 0,
+      "name": "Angela",
+      "review": "My face this morning, it’s wayyy better than before. The sunburns are almost cleared, my face is brighter"
+    },
+    {
+      "image": "02",
+      "_id": 1,
+       "name": "Precious",
+      "review": "I love how the moisturizer makes my skin feel after rubbing it. It always feel so soft. My skin has improved actually. People have been telling me that my skin is glowing and getting brighter.The fact that it's even compatible with my skin shows that it's good cuz my skin is verrrryy sensitive Thumbs up 👍🏻❤️"
+    },
+    {
+      "image":"03",
+      "_id" : 2,
+      "name":"Funmike",
+      "review":"I have consistently used the scrub and moisturizer daily( I Particularly love the feel of the moisturizer) and for the days I have energy I top it with the Sirius oil.As much as I don’t have a troubled skin (or so I thought), I didn’t know I could attain this glow with little effort (I am a lazy somebody, it’s why I carry my care face all day everyday). Thank you for serving my melanin"
+    }
+  ]
+}

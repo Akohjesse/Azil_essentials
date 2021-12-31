@@ -1,0 +1,46 @@
+{
+  "name": "azil_essentials",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "body-parser": "^1.19.0",
+    "core-js": "^3.6.5",
+    "cursor-dot": "^1.0.5",
+    "gsap": "^3.7.1",
+    "remixicon": "^2.5.0",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2"
+  },
+  "description": "## Project setup ``` npm install ```",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akohjesse/Azil_essentials.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akohjesse/Azil_essentials/issues"
+  },
+  "homepage": "https://github.com/Akohjesse/Azil_essentials#readme"
+}

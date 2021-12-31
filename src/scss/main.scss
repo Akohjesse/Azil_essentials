@@ -1,0 +1,32 @@
+@import url('./font.scss');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0px;
+  }
+.display_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.highlight{
+  color:#000006;
+  font-weight: bolder;
+}
+main, .main{
+    width:85%;
+    padding: 20px 0px;
+    margin:0 auto;
+    margin-top: 3% ;
+    padding-top:3%  ;
+}
+
+.move_sideways{
+    animation:slide_left_right 2s forwards ease-in-out infinite;
+  }
+  @keyframes slide_left_right{
+    0%{}
+    50%{transform: translateX(40px)}
+    100%{transform: translateX(0);}
+}

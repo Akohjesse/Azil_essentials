@@ -1,0 +1,284 @@
+.p{
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    margin:0 auto;
+   line-height:30px;
+   width:70%;
+  font-size:1.1em;
+}
+.h2{
+ text-align: center;
+ font-family: 'Urbanist', sans-serif;
+}
+.azil_story{
+   height:auto;
+ .about{
+    background-color: rgb(0, 0, 0) ;
+    background-image: url('../assets/WS.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: rgb(243, 243, 243);
+     h1{
+       text-align: center;
+       font-family: Voyage;
+       font-size: 6em;color: rgb(255, 255, 255);
+       span{
+         display: block;
+         &:nth-child(2){
+           transform: translateX(5%);
+         }
+       }
+     }
+     .text_about{
+         margin-top:10%;
+      .vision{
+          p{
+            font-size:3em;
+            font-family:Voyage;
+            font-weight: 600;
+            text-align: center;
+            width:75%;
+            margin:0 auto;
+          }
+       }
+      .how{ 
+            margin-top:30px;
+       }
+   }
+ }
+ .container{
+   margin-top:2%;
+   padding:10px 0px;
+   .founder{
+    text-align: center;
+    margin-top:10%;
+    .wrap{
+      width:90%;
+      display: flex;
+      margin: 4% auto;
+      justify-content: space-between;
+      align-items: center;
+      .img{
+          width:45%;
+          margin:0 auto;
+          box-shadow: grey -20px -19px 0px;
+          transition: ease-in-out 0.4s;
+          &:hover{
+            box-shadow:grey 20px -19px 0px;
+          }
+          img{
+            width:100%;
+          }
+       }
+       .text{
+         width: 45%;
+         margin: 0 auto;
+         h2{
+           text-align: center;
+           font-family: Voyage;
+           font-size:2.3em;
+           margin-bottom:30px;
+         }
+         q{
+            text-align: center;
+           font-family: 'Poppins';
+            font-size: 1.1em;
+            line-height:28px;
+         }
+         .btn{
+           margin-top: 20px;
+           button{
+             outline: none;
+             border:none;
+             font-weight: 600;
+             padding:20px 45px;
+             font-family: 'Urbanist', sans-serif;
+             text-transform: uppercase;
+           }
+         }
+       }
+    } 
+   }
+ }
+}
+
+@media (max-width:1300px){
+    .azil_story{
+       .about{
+         h1{
+           font-size: 5em;
+         }
+       }
+    }
+}
+@media (max-width:1100px){
+  .azil_story{
+    main{
+      width:90%
+    }
+     .about{
+       h1{
+         font-size:4.5em;
+       }
+     }
+  }
+}
+@media (max-width:1000px) {
+  .azil_story{
+    .about{
+      padding: 40px 0px;
+      h1{
+        font-size: 4em;
+      }
+      .text_about{
+        .vision{
+          p q{
+            font-size: 0.9em;
+          }
+          .how{
+             margin:30px 0px;  
+          }
+        }
+      }
+    }
+     .container{
+       .founder{
+         .wrap{
+           flex-direction: column;
+           .img{
+             width:50%;
+           }
+           .text{
+             margin-top:40px;
+             width:70%;
+             .btn{
+               button{
+                  border-radius: 10px;
+               }
+             }
+           }
+         }
+       }
+     }
+  }
+}
+@media (max-width:900px){
+  .azil_story{
+         .about{
+           margin-top:10% ;
+           padding:60px 0px;
+           h1{
+             font-size: 3.4em;
+             span{
+               &:nth-child(2){
+                 transform: none;
+               }
+             }
+           }
+           .text_about{
+             .vision{
+               p{
+                 font-size:2.3em ;
+               }
+             }
+             .how{
+              .p{
+               line-height: 26px;
+               font-size: 16px;
+              }
+            }
+           }
+         }
+         .container{
+           .founder{
+             h2{
+               margin-bottom: 40px;
+             }
+             .wrap{
+               .img{
+                 width: 80%;
+               }
+               .text{
+                 width: 90%;
+               }
+             }
+           }
+         }
+  }
+}
+@media (max-width:600px){
+  .azil_story{
+    .about{
+      padding:60px 30px;
+       width: 100%;
+      background-attachment: fixed;
+      h1{
+        margin-top:30px;
+        font-size: 3em;
+
+      }
+      .text_about{
+        .vision{
+          p{
+            font-size: 2.5em;
+            margin-top: 20px;
+            width:85%;
+          }
+        }
+        .how{
+          .p{
+            width: 85%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:500px){
+  .azil_story{
+    .about{
+      margin-top:5% ;
+      padding: 20px 20px;
+      h1{
+        font-size: 3.2em;
+
+      }
+      .text_about{
+        .vision{
+          h2{
+            margin-top: 60px;
+          }
+          p{
+            font-size: 1.8em;
+            margin-top: 20px;
+            width:100%;
+          }
+        }
+        .how{
+          .p{
+            width: 100%;
+          }
+        }
+      }
+    }
+    .container{
+      .founder{
+          width: 95%;
+          .wrap{
+            .img{
+              width: 89%;
+            }
+            .text{
+              width: 100%;
+              q{
+                font-size: 0.9em;
+                line-height: 23px;
+              }
+            }
+          }
+      }
+    }
+  }
+}

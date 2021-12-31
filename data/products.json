@@ -1,0 +1,39 @@
+{
+    "products":[
+        { 
+            "_id": 1,
+            "price":2000,
+            "name": "Hydrating Toner",
+            "productInfo": " Give your skin a hint of pleasure with Azil’s Hydrating Toner. It contains rose hydrosol which restores the skin’s natural PH level, providing the calm needed after cleansing, coupled with more hydration effect from glycerine",
+            "image":"hydrating_toner.jpeg"
+        },
+        {
+            "_id":2,
+            "price":4500,
+            "name": "Restoring Face Moisturizer",
+            "productInfo": "Azil’s Restoring Face Moisturizer has been formulated to restore your skin to its right state. It contains active ingredients such as: Niacinamide, Rosehip seed oil, Allantoin and Vitamin E.",
+            "image": "faceMoisturizer.jpeg"
+        },
+        {
+            "_id":3,
+            "price":5000,
+            "name": "African Beauty Soap",
+            "productInfo": "Perfect for all skin types: it cleanse, repairs, evens and gives glowing skin. It deeply cleanse without stripping the skin’s moisture and oils Wash away all the stress and elevate your mood just before you sleep with our best seller, African beauty soap.",
+            "image": "beauty_soap.jpeg"
+        },
+        {
+            "_id":4,
+            "price":4500,
+            "name": "Hibiscus Scrub",
+            "productInfo": "Azil’s Hibiscus Scrub was formulated using hibiscus extract, honey, sunflower oil and sugar. Your skincare routine is never complete if you do not exfoliate your skin. Exfoliation is a huge part of your skincare because it allows natural cell renewal, makes the skin more radiant and luminous.",
+            "image": "hibiscus_scrub.jpeg"
+        },
+        {
+            "_id":5,
+            "price":4000,
+            "name": "Sirius Oil",
+            "productInfo": "Sirius is the brightest star in the night sky. This is the same effect Azil’s Sirius oil gives to your skin: that radiance and glow that makes you stand out confidently wherever you go.",
+            "image": "sirius_oil.jpeg"
+        }
+    ]
+}
