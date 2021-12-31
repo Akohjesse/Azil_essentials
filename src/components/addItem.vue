@@ -17,7 +17,7 @@
 
           <div class="buttons">
               <Quantity/>
-              <AddTocart @click="storeProduct(product)" text="Add To Cart"/>
+              <AddTocart @click="storeProduct(product.name, product.price)" text="Add To Cart"/>
           </div>
         </div> 
      </div>
@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import storeItem from '../JS/localStorage'
 import {ref} from 'vue'
 import Quantity from '../components/quantity++.vue'
 import AddTocart from '../components/button.vue'
@@ -41,9 +42,11 @@ export default {
               emit('closeOrderModal')
             },1000)
       }
-
-
-      return{closeButton, hamburger}
+      const storeProduct = (a,b) =>{
+         let items = {a,b}
+         storeItem(items);
+      }
+      return{closeButton, hamburger , storeProduct}
     }
 }
 </script>
