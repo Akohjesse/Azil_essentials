@@ -35,7 +35,6 @@ created() {
 methods:{
   getNow(data){
      this.$emit('emitOpenModalOrder', data);
-
   }
 }
 }
