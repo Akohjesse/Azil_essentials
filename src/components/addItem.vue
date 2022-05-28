@@ -16,7 +16,7 @@
           <p>Get Azil's {{product.name}} for <span class="highlight">NGN {{product.price}}</span> . Shipping fee free for In-Lagos orders </p>
 
           <div class="buttons">
-              <Quantity/>
+              <Quantity @value="setQuantity"/>
               <AddTocart @click="storeProduct(product.name, product.price)" text="Add To Cart"/>
           </div>
         </div> 
@@ -36,6 +36,7 @@ export default {
 
     setup( props, {emit}){
       const hamburger = ref(null);
+      const quantity = ref(1);
       const closeButton = ()=>{
             hamburger.value.classList.toggle('open_r');
             setTimeout(()=>{
@@ -43,10 +44,15 @@ export default {
             },1000)
       }
       const storeProduct = (a,b) =>{
-         let items = {a,b}
+         let items = {'product':a, 'price': b, 'amount':quantity.value}
          storeItem(items);
       }
-      return{closeButton, hamburger , storeProduct}
+
+      const setQuantity= (a) =>{
+            quantity.value = a
+      }
+
+      return{closeButton, hamburger , storeProduct, setQuantity}
     }
 }
 </script>

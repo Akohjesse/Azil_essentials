@@ -20,10 +20,12 @@ export default {
  },
  methods:{
      reduceQuantity(){
-         this.quantity--
+         this.quantity--;
+         this.$emit('value', this.quantity)
      },
      increaseQuantity(){
-         this.quantity++
+         this.quantity++;
+         this.$emit('value', this.quantity)
      }
  }
 }

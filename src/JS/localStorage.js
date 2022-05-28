@@ -1,14 +1,13 @@
 const storeItem = (task) => {
         let added;
-        if(localStorage.getItem('added') === null){
+        if(localStorage.getItem('Azil_cart') === null){
           added= [];
         } else {
-          added = JSON.parse(localStorage.getItem('tasks'));
+          added = JSON.parse(localStorage.getItem('Azil_cart'));
         }
-      
         added.push(task);
       
-        localStorage.setItem('added', JSON.stringify(added));
+        localStorage.setItem('Azil_cart', JSON.stringify(added));
 }
 
 export default storeItem
