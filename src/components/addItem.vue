@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import storeItem from '../JS/localStorage'
+import { storeItem } from '../JS/localStorage'
 import { ref } from 'vue'
 import Quantity from '../components/quantity++.vue'
 import AddTocart from '../components/button.vue'

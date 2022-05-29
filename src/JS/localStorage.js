@@ -10,4 +10,9 @@ const storeItem = (task) => {
     localStorage.setItem('Azil_cart', JSON.stringify(added))
 }
 
-export default storeItem
+const getItem = () => {
+    let items = JSON.parse(localStorage.getItem('Azil_cart'))
+    return items
+}
+
+export { storeItem, getItem }

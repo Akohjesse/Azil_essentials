@@ -1,7 +1,7 @@
 <template>
-    <div class="wrap">
+    <div class="wrap cart-wrap">
         <main>
-            <div class="empty">
+            <div v-if="!items" class="cart-empty">
                 <div class="no_item">
                     <h1>Your Cart is Empty!</h1>
                     <h2>~ Add products to cart and proceed to checkout ~</h2>
@@ -14,19 +14,26 @@
                     </div>
                 </div>
             </div>
+            <div v-else class="cart_data">
+                <div v-for="item in items" :key="item">
+                    <h1>{{ item.product }}</h1>
+                </div>
+            </div>
         </main>
         <Complete />
         <Footer />
     </div>
 </template>
 
-<script>
+<script setup>
+import { getItem } from '@/JS/localStorage.js'
 import Complete from '../components/productsPack.vue'
 import Footer from '../components/footer.vue'
-export default {
-    name: 'cart',
-    components: { Footer, Complete },
-}
+import { onMounted, ref } from '@vue/runtime-core'
+const items = ref(null)
+onMounted(() => {
+    items.value = getItem()
+})
 </script>
 
 <style lang="scss" scoped>
